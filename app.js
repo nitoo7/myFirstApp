@@ -5,7 +5,7 @@ const bluebird = require('bluebird');
 const _ = require('lodash');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/example');
+mongoose.connect('mongodb://example:example@ds053312.mongolab.com:53312/todolist');
 var Schema = mongoose.Schema;
 var movieSchema = new Schema({
   title: String,
