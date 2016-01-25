@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.get('/details', function (req, res) {
   var desc = {"title":"abc","desc":"abc"}
-  res.send('Hello World!');
+  res.send(desc);
 });
 
 app.listen(process.env.PORT, function () {
