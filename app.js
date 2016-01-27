@@ -4,29 +4,29 @@ var app = express();
 const bluebird = require('bluebird');
 const _ = require('lodash');
 
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 //mongoose.connect('mongodb://localhost:27017/example');
-mongoose.connect('mongodb://example:example@ds053312.mongolab.com:53312/example);
-var Schema = mongoose.Schema;
-var movieSchema = new Schema({
-  title: String,
-  year: Number,
-  director: String,
-  rating: String
-});
-var Movie = mongoose.model('movie', movieSchema);
+//mongoose.connect('mongodb://example:example@ds053312.mongolab.com:53312/example);
+//var Schema = mongoose.Schema;
+//var movieSchema = new Schema({
+//  title: String,
+//  year: Number,
+//  director: String,
+//  rating: String
+//});
+//var Movie = mongoose.model('movie', movieSchema);
 
-var first = new Movie({
-  title: 'asdfasdd',
-  year: 123,
-  director: 'asdasd',
-  rating: 'asdasd'
-})
+//var first = new Movie({
+//  title: 'asdfasdd',
+//  year: 123,
+//  director: 'asdasd',
+//  rating: 'asdasd'
+//})
 
-first.save(function(err, data) {
-  if (err) return console.error(err);
-  console.log('***->'data);
-});
+//first.save(function(err, data) {
+//  if (err) return console.error(err);
+//  console.log('***->'data);
+//});
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
