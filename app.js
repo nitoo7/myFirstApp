@@ -33,12 +33,12 @@ app.get('/', function (req, res) {
 });
 
 app.get('/details', function (req, res) {
-var res = {"title": "JAWS",
+var resp = {"title": "JAWS",
     "year": "1951",
     "director": "Steven speilberg",
     "rating": "PG"}
   //Movie.findOne({}).exec().then(function(data){return res.send(data)})
-return.send(res);
+res.send(resp);
 });
 
 app.listen(process.env.PORT || 3000, function () {
