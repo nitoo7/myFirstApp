@@ -19,7 +19,7 @@ var Movie = mongoose.model('movie', movieSchema);
 
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send("Hello World!");
 });
 
 app.get('/details', function (req, res) {
